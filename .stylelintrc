@@ -1,0 +1,31 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9-]+$",
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9-]+$",
+    "at-rule-no-vendor-prefix": true,
+    "declaration-no-important": [
+      true,
+      { "severity": "warning" }
+    ],
+    "media-feature-name-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-list-comma-newline-after": "always-multi-line",
+    "selector-no-vendor-prefix": true,
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": ["custom-elements", "default-namespace"]
+      }
+    ],
+    "string-quotes": "single",
+    "value-no-vendor-prefix": true,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      { "ignorePseudoElements": ["ng-deep"]}
+    ],
+    "scss/at-import-no-partial-leading-underscore": null,
+    "color-function-notation": "legacy",
+    "media-feature-range-notation": "prefix"
+  }
+}
